@@ -1,38 +1,57 @@
-.App {
-  text-align: center;
+/* Import Tailwind CSS */
+@import url('https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css');
+
+/* Import Font Awesome */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css');
+
+/* Custom styles */
+.toolbar button {
+    margin-right: 5px;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    cursor: pointer;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.toolbar button.active {
+    background-color: #ddd;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.post-textbox {
+    border: 1px solid #ccc;
+    padding: 10px;
+    min-height: 200px;
+    resize: vertical;
+    overflow: auto;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.select-date {
+    float: right;
+    margin-right: 20px;
+    margin-top: 130px;
 }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+
+.toolbar button {
+            margin-right: 5px;
+            padding: 5px 10px;
+            border: 1px solid #ccc;
+            background-color: #f9f9f9;
+            cursor: pointer;
+        }
+        .toolbar button.active {
+            background-color: #ddd;
+        }
+        .post-textbox {
+            border: 1px solid #ccc;
+            padding: 10px;
+            min-height: 200px;
+            resize: vertical;
+            overflow: auto;
+        }
+        .select-date {
+            float: right;
+            margin-right: 20px;
+            margin-top: 130px;
+        }
